@@ -6,15 +6,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        header
+        .header
         {
             font-family: 'Roboto';
             text-align: center;
             background-image: linear-gradient(to right,white,#ff66ff);
             color: white;
         }
-        footer
+        .footer
         {
+            margin-top: 27.5%;
             font-family: 'Roboto';
             text-align: center;
             background-color: black;
@@ -54,9 +55,11 @@
 </head>
 
 <body>
-    <header>
-        <h1>MENU</h1>
-    </header>
+    <div class="header">
+        <header>
+            <h1>MENU</h1>
+        </header>
+    </div>
 
     <div class="container">
         <div class="nonvegitems">
@@ -79,14 +82,16 @@
             <h2>Veg</h2>
             <ul>
                 <li data-veg-type="panner" onclick="display(this)">Paneer Curry</li>
-                <li data-veg-type="Aloo">Aloo Curry</li>
-                <li data-veg-type="Mushrooms">Mushrooms Curry</li>
+                <li data-veg-type="Aloo" onclick="display(this)">Aloo Curry</li>
+                <li data-veg-type="Mushrooms" onclick="display(this)">Mushrooms Curry</li>
               </ul>
         </div>
     </div>
 
-    <footer>
-        <h2>THE END</h2>
-    </footer>
+    <div class="footer">
+        <footer>
+            <h2>THE END</h2>
+        </footer>
+    </div>
 </body>
 </html>
