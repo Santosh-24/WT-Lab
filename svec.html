@@ -45,20 +45,31 @@
 
         .owners
         {
+            display: grid;
+            margin-top: 50px;
+            margin-bottom: 50px;
             margin-left: 50px;
+            grid-template-columns: .3fr 1fr;
+            grid-template-areas: 'chair notif'
+                                'ceo notif';
+            column-gap: 50px;
+            row-gap: 20px;
+            
         }
 
         .chair
         {
+            grid-area: chair;
             border:1px violet solid;
+            padding: 50px;
             width: fit-content;
             height: fit-content;
         }
 
         .ceo
         {
-            margin-top: 5px;
-            margin-bottom: 10px;
+            padding: 50px;  
+            grid-area: ceo;
             border:1px violet solid;
             width: fit-content;
             height: fit-content;
@@ -66,16 +77,20 @@
 
         .notifications
         {
-            display:block;
+            border-top:0px ;
+            width: fit-content;
+            grid-area: notif;
+            border: 1px solid red;
+            padding-right: 50px;
             float: right;
-            border: 1px solid;
-
         }
 
         .footcontainer
         {
-            display: flex;
+            display: grid;
             background-color:#27334f ;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas: 'quicklinks contactus';
         }
         .footerlinks
         {
@@ -85,32 +100,48 @@
             
         }
 
+        .quicklinks
+        {
+            display: grid;
+            grid-area: quicklinks;
+            grid-template-areas:'qhr quicklinks1 quicklinks2 quicklinks3';
+        }
         .quicklinks1
         {
-            flex: 1;
+            grid-area: quicklinks1;
             margin-top: 50px;
         }
 
         .quicklinks2
         {
-            flex: 1;
+            grid-area: quicklinks2;
             margin-top: 50px;
         }
 
         .quicklinks3
         {
-            flex: 1;
+            grid-area: quicklinks3;
             margin-top: 50px;
         }
         .contactus
         {
-            flex: 1;
+            grid-area:contactus ;
         }
+
+        .qhr
+        {
+            grid-area: qhr;
+        }
+
+        /* .chr
+        {
+            grid-area: chr;
+        } */
 
         li
         {
 
-            color: white;
+            color: yellowgreen;
             padding: 5px;
         }
 
@@ -142,75 +173,128 @@
     <div class="owners">
         <div class="chair">
             <img src="https://www.svec.education/wp-content/uploads/2020/02/dr-mohan-babu-chairman.jpg" width="250">
-            <h3 style="font-family: 'Roboto';">MESSAGE FROM CHAIRMAN</h3>
+            <h4 style="font-family: 'Roboto';">MESSAGE FROM CHAIRMAN</h4>
+            <p style="font-family: 'Roboto';">Sree Vidyanikethan Education Trust (SVET) was established in 1992, it has surpassed many a milestone. As an individual, I have the best memories and biggest learning experiences in life.</p>
+            <button style="border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;">Read More</button>
         </div>
     
         <div class="ceo">
             <img src="https://www.svec.education/wp-content/uploads/2020/02/ceo-vishnu-manchu.jpg"  width="250">
-            <h3 style="font-family: 'Roboto';">MESSAGE FROM CEO</h3>
+            <h4 style="font-family: 'Roboto';">MESSAGE FROM CEO</h4>
+            <p style="font-family: 'Roboto';">Whilst Sree Vidyanikethan has marked its successful Silver Jubilee in the field of Education, I express my heartfelt gratitude for all your continued support and for the confidence that you have placed in us, helping make our longevity possible.</p>
+            <button style="border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;">Read More</button>
+        </div>
+
+        <div class="notifications">
+            <h3 style="font-family: 'Roboto';background:#de2d59;color: white;">Notifications</h3>
+            <ul>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                <li><a href="#">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
+                <li><a href="#">Academic Calendar 2021-22 for MCA V-Semester</a></li>
+                <li><a href="#">Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</a></li>
+                
+            </ul>
         </div>
     </div>
+
     
     
 
         <div class="footcontainer">
-            <div class="quicklinks1">
-                <ul></ul>
-                    <li><a href="#" class="footerlinks">Admission – Indian Nationals</a></li>
-                    <li><a href="#" class="footerlinks">Admission – Foreign Nationals</a></li>
-                    <li><a href="#" class="footerlinks">Sports & Games</a></li>
-                    <li><a href="#" class="footerlinks">Health & Wellness</a></li>
-                    <li><a href="#" class="footerlinks">Annual Fests</a></li>
-                    <li><a href="#" class="footerlinks">NSS</a></li>
-                    <li><a href="#" class="footerlinks">MGNCRE</a></li>
-                    <li><a href="#" class="footerlinks">Student Council</a></li>
-                    <li><a href="#" class="footerlinks">Alumni</a></li>
-                    <li><a href="#" class="footerlinks">Student/Parent Login</a></li>
-                    <li><a href="#" class="footerlinks">Exam Results</a></li>
-                    <li><a href="#" class="footerlinks">Placements</a></li>
-                    <li><a href="#" class="footerlinks">Hostel & Dining</a></li>
-                    <li><a href="#" class="footerlinks">Transportation</a></li>
-                </ul>
-            </div>
-            <div class="quicklinks2">
-                <ul>
-                    <li><a href="#" class="footerlinks">Fee Payment</a></li>
-                    <li><a href="#" class="footerlinks">Library</a></li>
-                    <li><a href="#" class="footerlinks">Facilities</a></li>
-                    <li><a href="#" class="footerlinks">Dispensary</a></li>
-                    <li><a href="#" class="footerlinks">APSSDC – SIEMENS – TSDI</a></li>
-                    <li><a href="#" class="footerlinks">Central Fabrication Unit</a></li>
-                    <li><a href="#" class="footerlinks">Skill Development Centers</a></li>
-                    <li><a href="#" class="footerlinks">PMKVY</a></li>
-                    <li><a href="#" class="footerlinks">TEP</a></li>
-                    <li><a href="#" class="footerlinks">Campus Green</a></li>
-                    <li><a href="#" class="footerlinks">News and Events</a></li>
-                    <li><a href="#" class="footerlinks">Carrers</a></li>
-                    <li><a href="#" class="footerlinks">Mandatory Disclosure</a></li>
-                    <li><a href="#" class="footerlinks">STI Hub – SEED, DST</a></li>
-                </ul>
-            </div>
-    
-            <div class="quicklinks3">
-                <ul>
-                    <li><a href="#" class="footerlinks">Anti-Ragging</a></li>
-                    <li><a href="#" class="footerlinks">Policy Documents</a></li>
-                    <li><a href="#" class="footerlinks">NACC</a></li>
-                    <li><a href="#" class="footerlinks">NBA</a></li>
-                    <li><a href="#" class="footerlinks">NIRF</a></li>
-                    <li><a href="#" class="footerlinks">IQAC</a></li>
-                    <li><a href="#" class="footerlinks">TEQIP-II</a></li>
-                    <li><a href="#" class="footerlinks">AICTE</a></li>
-                    <li><a href="#" class="footerlinks">OBE</a></li>
-                    <li><a href="#" class="footerlinks">Annual Reports</a></li>
-                    <li><a href="#" class="footerlinks">Audit Reports</a></li>
-                    <li><a href="#" class="footerlinks">Best Practices</a></li>
-                    <li><a href="#" class="footerlinks">SVEI</a></li>
-                    <li><a href="#" class="footerlinks">Grievance Redressal</a></li>
-                </ul>
+            <div class="quicklinks">
+                <div class="qhr">
+                    <h2 style="font-family: 'Roboto';color: white;">Quick Links</h2>
+                    <hr>
+                </div>
+                <div class="quicklinks1">
+                    <ul></ul>
+                        <li><a href="#" class="footerlinks">Admission – Indian Nationals</a></li>
+                        <li><a href="#" class="footerlinks">Admission – Foreign Nationals</a></li>
+                        <li><a href="#" class="footerlinks">Sports & Games</a></li>
+                        <li><a href="#" class="footerlinks">Health & Wellness</a></li>
+                        <li><a href="#" class="footerlinks">Annual Fests</a></li>
+                        <li><a href="#" class="footerlinks">NSS</a></li>
+                        <li><a href="#" class="footerlinks">MGNCRE</a></li>
+                        <li><a href="#" class="footerlinks">Student Council</a></li>
+                        <li><a href="#" class="footerlinks">Alumni</a></li>
+                        <li><a href="#" class="footerlinks">Student/Parent Login</a></li>
+                        <li><a href="#" class="footerlinks">Exam Results</a></li>
+                        <li><a href="#" class="footerlinks">Placements</a></li>
+                        <li><a href="#" class="footerlinks">Hostel & Dining</a></li>
+                        <li><a href="#" class="footerlinks">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="quicklinks2">
+                    <ul>
+                        <li><a href="#" class="footerlinks">Fee Payment</a></li>
+                        <li><a href="#" class="footerlinks">Library</a></li>
+                        <li><a href="#" class="footerlinks">Facilities</a></li>
+                        <li><a href="#" class="footerlinks">Dispensary</a></li>
+                        <li><a href="#" class="footerlinks">APSSDC – SIEMENS – TSDI</a></li>
+                        <li><a href="#" class="footerlinks">Central Fabrication Unit</a></li>
+                        <li><a href="#" class="footerlinks">Skill Development Centers</a></li>
+                        <li><a href="#" class="footerlinks">PMKVY</a></li>
+                        <li><a href="#" class="footerlinks">TEP</a></li>
+                        <li><a href="#" class="footerlinks">Campus Green</a></li>
+                        <li><a href="#" class="footerlinks">News and Events</a></li>
+                        <li><a href="#" class="footerlinks">Carrers</a></li>
+                        <li><a href="#" class="footerlinks">Mandatory Disclosure</a></li>
+                        <li><a href="#" class="footerlinks">STI Hub – SEED, DST</a></li>
+                    </ul>
+                </div>
+        
+                <div class="quicklinks3">
+                    <ul>
+                        <li><a href="#" class="footerlinks">Anti-Ragging</a></li>
+                        <li><a href="#" class="footerlinks">Policy Documents</a></li>
+                        <li><a href="#" class="footerlinks">NACC</a></li>
+                        <li><a href="#" class="footerlinks">NBA</a></li>
+                        <li><a href="#" class="footerlinks">NIRF</a></li>
+                        <li><a href="#" class="footerlinks">IQAC</a></li>
+                        <li><a href="#" class="footerlinks">TEQIP-II</a></li>
+                        <li><a href="#" class="footerlinks">AICTE</a></li>
+                        <li><a href="#" class="footerlinks">OBE</a></li>
+                        <li><a href="#" class="footerlinks">Annual Reports</a></li>
+                        <li><a href="#" class="footerlinks">Audit Reports</a></li>
+                        <li><a href="#" class="footerlinks">Best Practices</a></li>
+                        <li><a href="#" class="footerlinks">SVEI</a></li>
+                        <li><a href="#" class="footerlinks">Grievance Redressal</a></li>
+                    </ul>
+                </div>
             </div>
 
+            
             <div class="contactus">
+                <div class="chr">
+                    <h2 style="font-family: 'Roboto';color: white;">Contact Us</h2>
+                    <hr>
+                </div>
                 <br><br><br>
                 <address>
                     <h3 style="color: white;font-family: 'Roboto', sans-serif;">Sree Vidhyanikethan Engineering College</h3><br>
@@ -219,9 +303,9 @@
                         Tirupati, <br>
                         Chittoor (District), <br>
                         Andhra Pradesh - 517102. <br>
-                        INDIA <br>
+                        INDIA, <br>
 
-                        mailto:<a href="mailto:webmaster@example.com" style="color: white;text-decoration: none;">Jon Doe</a>
+                        <a href="management@vidyanikethan.edu" style="color: white;text-decoration: none;">Email: management@vidyanikethan.edu</a>
                     </p>
                 </address>
             </div>
