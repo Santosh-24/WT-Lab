@@ -65,6 +65,7 @@
         {
             grid-area: chair;
             border:1px violet solid;
+            border-radius: 10px;
             padding: 50px;
             width: fit-content;
             height: fit-content;
@@ -76,11 +77,18 @@
             color: white;
         }
 
+        .chair-btn{border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;}
+        .chair-btn:hover
+        {
+            background-color: #ff4d94;
+        }
+
         .ceo
         {
             padding: 50px;  
             grid-area: ceo;
             border:1px violet solid;
+            border-radius: 10px;
             width: fit-content;
             height: fit-content;
         }
@@ -88,6 +96,12 @@
         {
             background-color: #111d3d;
             color: white;
+        }
+
+        .ceo-btn{border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;}
+        .ceo-btn:hover
+        {
+            background-color: #ff4d94;
         }
 
         .notifications
@@ -234,14 +248,14 @@
             <img src="https://www.svec.education/wp-content/uploads/2020/02/dr-mohan-babu-chairman.jpg" width="250">
             <h4 style="font-family: 'Roboto';">MESSAGE FROM CHAIRMAN</h4>
             <p style="font-family: 'Roboto';">Sree Vidyanikethan Education Trust (SVET) was established in 1992, it has surpassed many a milestone. As an individual, I have the best memories and biggest learning experiences in life.</p>
-            <button style="border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;">Read More</button>
+            <button class="chair-btn">Read More</button>
         </div>
     
         <div class="ceo">
             <img src="https://www.svec.education/wp-content/uploads/2020/02/ceo-vishnu-manchu.jpg"  width="250">
             <h4 style="font-family: 'Roboto';">MESSAGE FROM CEO</h4>
             <p style="font-family: 'Roboto';">Whilst Sree Vidyanikethan has marked its successful Silver Jubilee in the field of Education, I express my heartfelt gratitude for all your continued support and for the confidence that you have placed in us, helping make our longevity possible.</p>
-            <button style="border: none;background-color: #27334f;color: white;font-family: 'Roboto';padding: 15px;">Read More</button>
+            <button class="ceo-btn">Read More</button>
         </div>
 
         <div class="notifications">
