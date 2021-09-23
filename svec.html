@@ -27,7 +27,8 @@
 
         .navbarlinks
         {
-            
+            display: flex;
+            justify-content: space-around;
             border-right:1px solid #de2d59 ;
             font-family: 'Roboto', sans-serif;
             text-decoration: none;
@@ -69,6 +70,12 @@
             height: fit-content;
         }
 
+        .chair:hover
+        {
+            background-color: #111d3d;
+            color: white;
+        }
+
         .ceo
         {
             padding: 50px;  
@@ -77,15 +84,45 @@
             width: fit-content;
             height: fit-content;
         }
+        .ceo:hover
+        {
+            background-color: #111d3d;
+            color: white;
+        }
 
         .notifications
         {
-            border-top:0px ;
             width: fit-content;
             grid-area: notif;
-            border: 1px solid red;
             padding-right: 50px;
             float: right;
+        }
+
+        .nitems
+        {
+            display: flex;
+            margin-left: 50px;
+            margin-bottom: 40px;
+            margin-right: 30px;
+            justify-content: space-around;
+        }
+
+        .aitems
+        {
+            display: flex;
+            margin-left: 50px;
+            margin-bottom: 40px;
+            margin-right: 30px;
+            justify-content: space-around;
+        }
+
+        .eitems
+        {
+            display: flex;
+            margin-left: 50px;
+            margin-bottom: 40px;
+            margin-right: 30px;
+            justify-content: space-around;
         }
 
         .footer
@@ -189,7 +226,7 @@
     </nav>
 
     <div class="slides">
-        <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/3017/2018/8/6/Sree-Vidyanikethan-Engineering-College-Tirupati1.jpg">
+        <img src="https://www.svec.education/wp-content/uploads/2020/07/svec-slide-1.jpg" width="1510">
     </div>
 
     <div class="owners">
@@ -208,7 +245,7 @@
         </div>
 
         <div class="notifications">
-            <h3 style="font-family: 'Roboto';background:#de2d59;color: white;">Notifications</h3>
+            <h3 style="font-family: 'Roboto';background:#de2d59;color: white; padding: 10px;border-radius: 5px;">Notifications</h3>
             <ul>
                 <li><a href="#" class="notiflink">Academic Calendar 2020-2021 for I B.Tech II-Semester</a></li>
                 <li><a href="#" class="notiflink">Academic Calendar 2021-22 for MCA V-Semester</a></li>
@@ -246,6 +283,68 @@
         </div>
     </div>
 
+    <div class="news">
+        <h3 style="font-family: 'Roboto';background:#de2d59;color: white; padding: 10px;border-radius: 5px; margin-left: 50px;margin-right: 50px;">News & Events</h3>
+        <div class="nitems">
+            <div class="nitem1">
+                <img src="https://www.svec.education/wp-content/uploads/2021/03/AP-State-Police-Duty-Meet.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">1st (63rd) AP State Police Duty Meet – IGNITE 2020
+                </p>
+            </div>
+            <div class="nitem2">
+                <img src="https://www.svec.education/wp-content/uploads/2021/07/Skill.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">STI Hub – SEED, DST - SVEC
+                </p>
+            </div>
+            <div class="nitem3">
+                <img src="https://www.svec.education/wp-content/uploads/2021/03/National-Mathematics-Day-Celebrations.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">National Mathematics Day Celebrations – 2020
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="achievements">
+        <h3 style="font-family: 'Roboto';background:#de2d59;color: white; padding: 10px;border-radius: 5px; margin-left: 50px;margin-right: 50px;">Achievements</h3>
+        <div class="aitems">
+            <div class="aitem1">
+                <img src="https://www.svec.education/wp-content/uploads/2021/04/svec-bagged-3-awards-in-the-iste-ap-state-awards-2019.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">SVEC Bagged 3 Awards in the ISTE AP State Awards 2019
+                </p>
+            </div>
+            <div class="aitem2">
+                <img src="https://www.svec.education/wp-content/uploads/2021/08/iso-9001-2015.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">ISO 9001:2015
+                </p>
+            </div>
+            <div class="aitem3">
+                <img src="https://www.svec.education/wp-content/uploads/2021/07/careers-360.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">Ranked ‘AAAA’ by Careers 360 in 2021
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="eminent">
+        <h3 style="font-family: 'Roboto';background:#de2d59;color: white; padding: 10px;border-radius: 5px; margin-left: 50px;margin-right: 50px;">EMINENT PEOPLE VISITED</h3>
+        <div class="eitems">
+            <div class="eitem1">
+                <img src="https://www.svec.education/wp-content/uploads/2020/01/Sri-Ch-Vidyasagar-Rao.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">Sri Ch. Vidyasagar Rao, Hon’ble Governor of Maharastra
+                </p>
+            </div>
+            <div class="eitem2">
+                <img src="https://www.svec.education/wp-content/uploads/2020/01/Dr-A-S-Kiran-Kumar.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">Dr. A. S. Kiran Kumar
+                </p>
+            </div>
+            <div class="eitem3">
+                <img src="https://www.svec.education/wp-content/uploads/2020/01/Sri-Jasti-Chelameswar.jpg" width="400" height="250">
+                <p style="text-align: center; font-family: 'Roboto';">Justice Sri Jasti Chelameswar
+                </p>
+            </div>
+        </div>
+    </div>
 
         <div class="footer">
             <div class="quicklinks">
