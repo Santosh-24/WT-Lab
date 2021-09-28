@@ -62,8 +62,8 @@
             <input type="text" placeholder="First Name" required>
             <input type="text" placeholder="Last Name" required><br>
             
-            <input type="text" placeholder="Username" size="52" required><br>
-            <input type="password" placeholder="Password" size="52" required><br>
+            <input id="user" type="text" placeholder="Username" size="52" required><br>
+            <input id="pass" type="password" placeholder="Password" size="52" required><br>
             <input type="password" placeholder="Confirm Password" size="52" required><br>
 
             <input type="text" placeholder="Address" required>
@@ -86,8 +86,30 @@
             <input type="checkbox" name="agree">
             <label for="agree">I Agree to all T&C</label><br>
             
-            <center><button>Submit</button></center>
+            <center><button onclick="save()">Submit</button></center>
         </form>
     </div>
+
+    <script>
+
+
+        function save() 
+        {
+            if (typeof(Storage) !== "undefined") 
+            {
+                var username = document.getElementById("user").value;
+                var pass = document.getElementById("pass").value;
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', pass);
+            } 
+
+            else 
+            {
+                alert("No storage option");
+            }
+        }
+
+
+    </script>
 </body>
 </html>
